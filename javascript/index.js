@@ -56,35 +56,37 @@ const JS_일기그리기기능 = () => {
                   : ""
               }
             </div>
-            <div class="CSS_일기내용">
-              ${
-                el.기분 === "행복"
-                  ? `<div class="CSS_기분 CSS_행복">행복해요</div>`
-                  : ""
-              }
-              ${
-                el.기분 === "슬픔"
-                  ? `<div class="CSS_기분 CSS_슬픔">슬퍼요</div>`
-                  : ""
-              }
-              ${
-                el.기분 === "놀람"
-                  ? `<div class="CSS_기분 CSS_놀람">놀랐어요</div>`
-                  : ""
-              }
-              ${
-                el.기분 === "화남"
-                  ? `<div class="CSS_기분 CSS_화남">화나요</div>`
-                  : ""
-              }
-              ${
-                el.기분 === "기타"
-                  ? `<div class="CSS_기분 CSS_기타">기타</div>`
-                  : ""
-              }
-              <div class="CSS_날짜">${el.작성일}</div>
+            <div class="CSS_일기정보">
+              <div class="CSS_일기내용">
+                ${
+                  el.기분 === "행복"
+                    ? `<div class="CSS_기분 CSS_행복">행복해요</div>`
+                    : ""
+                }
+                ${
+                  el.기분 === "슬픔"
+                    ? `<div class="CSS_기분 CSS_슬픔">슬퍼요</div>`
+                    : ""
+                }
+                ${
+                  el.기분 === "놀람"
+                    ? `<div class="CSS_기분 CSS_놀람">놀랐어요</div>`
+                    : ""
+                }
+                ${
+                  el.기분 === "화남"
+                    ? `<div class="CSS_기분 CSS_화남">화나요</div>`
+                    : ""
+                }
+                ${
+                  el.기분 === "기타"
+                    ? `<div class="CSS_기분 CSS_기타">기타</div>`
+                    : ""
+                }
+                <div class="CSS_날짜">${el.작성일}</div>
+              </div>
+              <div class="CSS_일기제목"> ${el.제목}</div>
             </div>
-            <div class="CSS_일기제목"> ${el.제목}</div>
             <img class="CSS_삭제버튼" src="./assets/images/deleteButton.png" onclick="JS_일기삭제기능(event, ${index})" />
           </div>
         </a>
@@ -106,11 +108,11 @@ const JS_글쓰기기능 = () => {
   const options = {
     year: date.getFullYear(),
     month: (date.getMonth() + 1).toString().padStart(2, "0"),
-    date: date.getDate(),
+    date: (date.getDate() + 1).toString().padStart(2, "0"),
   };
 
   // 1-1. 내가쓴 일기 불러오기
-  const 날짜담는통 = options.year + "-" + options.month + "-" + options.date;
+  const 날짜담는통 = options.year + ". " + options.month + ". " + options.date;
   const 제목담는통 = window.document.getElementById("HTML_제목입력창").value;
   const 내용담는통 = window.document.getElementById("HTML_내용입력창").value;
   let 기분담는통;
@@ -186,7 +188,7 @@ const JS_필터링기능 = (event) => {
   const HTML_새로운일기도화지 = 필터링된일기목록
     .map(
       (el, index) => `
-                <a href="./detail.html?number=${index}">
+        <a href="./detail.html?number=${index}">
           <div class="CSS_일기">
             <div class="CSS_일기사진">
               ${
@@ -215,35 +217,37 @@ const JS_필터링기능 = (event) => {
                   : ""
               }
             </div>
-            <div class="CSS_일기내용">
-              ${
-                el.기분 === "행복"
-                  ? `<div class="CSS_기분 CSS_행복">행복해요</div>`
-                  : ""
-              }
-              ${
-                el.기분 === "슬픔"
-                  ? `<div class="CSS_기분 CSS_슬픔">슬퍼요</div>`
-                  : ""
-              }
-              ${
-                el.기분 === "놀람"
-                  ? `<div class="CSS_기분 CSS_놀람">놀랐어요</div>`
-                  : ""
-              }
-              ${
-                el.기분 === "화남"
-                  ? `<div class="CSS_기분 CSS_화남">화나요</div>`
-                  : ""
-              }
-              ${
-                el.기분 === "기타"
-                  ? `<div class="CSS_기분 CSS_기타">기타</div>`
-                  : ""
-              }
-              <div class="CSS_날짜">${el.작성일}</div>
+            <div class="CSS_일기정보">
+              <div class="CSS_일기내용">
+                ${
+                  el.기분 === "행복"
+                    ? `<div class="CSS_기분 CSS_행복">행복해요</div>`
+                    : ""
+                }
+                ${
+                  el.기분 === "슬픔"
+                    ? `<div class="CSS_기분 CSS_슬픔">슬퍼요</div>`
+                    : ""
+                }
+                ${
+                  el.기분 === "놀람"
+                    ? `<div class="CSS_기분 CSS_놀람">놀랐어요</div>`
+                    : ""
+                }
+                ${
+                  el.기분 === "화남"
+                    ? `<div class="CSS_기분 CSS_화남">화나요</div>`
+                    : ""
+                }
+                ${
+                  el.기분 === "기타"
+                    ? `<div class="CSS_기분 CSS_기타">기타</div>`
+                    : ""
+                }
+                <div class="CSS_날짜">${el.작성일}</div>
+              </div>
+              <div class="CSS_일기제목"> ${el.제목}</div>
             </div>
-            <div class="CSS_일기제목"> ${el.제목}</div>
             <img class="CSS_삭제버튼" src="./assets/images/deleteButton.png" onclick="JS_일기삭제기능(event, ${index})" />
           </div>
         </a>

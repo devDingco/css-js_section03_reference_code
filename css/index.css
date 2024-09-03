@@ -105,21 +105,28 @@ a {
   display: flex;
   flex-direction: column;
   gap: 8px;
+  border-radius: 16px;
 }
 
 .CSS_일기:hover {
   transform: scale(1.1);
-  box-shadow: 0rem 0.2rem 3rem 0rem rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 2px 30px 0px rgba(0, 0, 0, 0.16);
   transition: 0.5s;
 }
 
 .CSS_일기:hover .CSS_일기사진 {
-  filter: blur(0.3rem);
+  filter: blur(3px);
 }
 
 .CSS_일기사진 {
   height: 285px;
   width: auto;
+}
+
+.CSS_일기정보 {
+  display: flex;
+  flex-direction: column;
+  padding: 0 8px 16px;
 }
 
 .CSS_기분이미지 {
@@ -180,10 +187,10 @@ a {
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
+  overflow: hidden;
 }
 
 .CSS_삭제버튼 {
-  width: 100%;
   width: 24px;
   height: 24px;
   position: relative;
