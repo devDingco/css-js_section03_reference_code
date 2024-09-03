@@ -108,7 +108,7 @@ const JS_글쓰기기능 = () => {
   const options = {
     year: date.getFullYear(),
     month: (date.getMonth() + 1).toString().padStart(2, "0"),
-    date: (date.getDate() + 1).toString().padStart(2, "0"),
+    date: date.getDate().toString().padStart(2, "0"),
   };
 
   // 1-1. 내가쓴 일기 불러오기
