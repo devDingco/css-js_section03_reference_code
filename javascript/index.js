@@ -30,59 +30,49 @@ const JS_일기그리기기능 = () => {
         <a href="./detail.html?number=${index}">
           <div class="CSS_일기">
             <div class="CSS_일기사진">
-              ${
-                el.기분 === "행복"
-                  ? '<img class="CSS_기분이미지" src="./assets/images/joy.png" alt="행복" />'
-                  : ""
-              }
-              ${
-                el.기분 === "슬픔"
-                  ? '<img class="CSS_기분이미지" src="./assets/images/sadness.png" alt="슬픔" />'
-                  : ""
-              }
-              ${
-                el.기분 === "놀람"
-                  ? '<img class="CSS_기분이미지" src="./assets/images/surprised.png" alt="놀람" />'
-                  : ""
-              }
-              ${
-                el.기분 === "화남"
-                  ? '<img class="CSS_기분이미지" src="./assets/images/anger.png" alt="화남" />'
-                  : ""
-              }
-              ${
-                el.기분 === "기타"
-                  ? '<img class="CSS_기분이미지" src="./assets/images/idontknownothing.png" alt="기타" />'
-                  : ""
-              }
+              ${el.기분 === "행복"
+          ? '<img class="CSS_기분이미지" src="./assets/images/joy.png" alt="행복" />'
+          : ""
+        }
+              ${el.기분 === "슬픔"
+          ? '<img class="CSS_기분이미지" src="./assets/images/sadness.png" alt="슬픔" />'
+          : ""
+        }
+              ${el.기분 === "놀람"
+          ? '<img class="CSS_기분이미지" src="./assets/images/surprised.png" alt="놀람" />'
+          : ""
+        }
+              ${el.기분 === "화남"
+          ? '<img class="CSS_기분이미지" src="./assets/images/anger.png" alt="화남" />'
+          : ""
+        }
+              ${el.기분 === "기타"
+          ? '<img class="CSS_기분이미지" src="./assets/images/idontknownothing.png" alt="기타" />'
+          : ""
+        }
             </div>
             <div class="CSS_일기정보">
               <div class="CSS_일기내용">
-                ${
-                  el.기분 === "행복"
-                    ? `<div class="CSS_기분 CSS_행복">행복해요</div>`
-                    : ""
-                }
-                ${
-                  el.기분 === "슬픔"
-                    ? `<div class="CSS_기분 CSS_슬픔">슬퍼요</div>`
-                    : ""
-                }
-                ${
-                  el.기분 === "놀람"
-                    ? `<div class="CSS_기분 CSS_놀람">놀랐어요</div>`
-                    : ""
-                }
-                ${
-                  el.기분 === "화남"
-                    ? `<div class="CSS_기분 CSS_화남">화나요</div>`
-                    : ""
-                }
-                ${
-                  el.기분 === "기타"
-                    ? `<div class="CSS_기분 CSS_기타">기타</div>`
-                    : ""
-                }
+                ${el.기분 === "행복"
+          ? `<div class="CSS_기분 CSS_행복">행복해요</div>`
+          : ""
+        }
+                ${el.기분 === "슬픔"
+          ? `<div class="CSS_기분 CSS_슬픔">슬퍼요</div>`
+          : ""
+        }
+                ${el.기분 === "놀람"
+          ? `<div class="CSS_기분 CSS_놀람">놀랐어요</div>`
+          : ""
+        }
+                ${el.기분 === "화남"
+          ? `<div class="CSS_기분 CSS_화남">화나요</div>`
+          : ""
+        }
+                ${el.기분 === "기타"
+          ? `<div class="CSS_기분 CSS_기타">기타</div>`
+          : ""
+        }
                 <div class="CSS_날짜">${el.작성일}</div>
               </div>
               <div class="CSS_일기제목"> ${el.제목}</div>
@@ -191,59 +181,49 @@ const JS_필터링기능 = (event) => {
         <a href="./detail.html?number=${index}">
           <div class="CSS_일기">
             <div class="CSS_일기사진">
-              ${
-                el.기분 === "행복"
-                  ? '<img class="CSS_기분이미지" src="./assets/images/joy.png" alt="행복" />'
-                  : ""
-              }
-              ${
-                el.기분 === "슬픔"
-                  ? '<img class="CSS_기분이미지" src="./assets/images/sadness.png" alt="슬픔" />'
-                  : ""
-              }
-              ${
-                el.기분 === "놀람"
-                  ? '<img class="CSS_기분이미지" src="./assets/images/surprised.png" alt="놀람" />'
-                  : ""
-              }
-              ${
-                el.기분 === "화남"
-                  ? '<img class="CSS_기분이미지" src="./assets/images/anger.png" alt="화남" />'
-                  : ""
-              }
-              ${
-                el.기분 === "기타"
-                  ? '<img class="CSS_기분이미지" src="./assets/images/idontknownothing.png" alt="기타" />'
-                  : ""
-              }
+              ${el.기분 === "행복"
+          ? '<img class="CSS_기분이미지" src="./assets/images/joy.png" alt="행복" />'
+          : ""
+        }
+              ${el.기분 === "슬픔"
+          ? '<img class="CSS_기분이미지" src="./assets/images/sadness.png" alt="슬픔" />'
+          : ""
+        }
+              ${el.기분 === "놀람"
+          ? '<img class="CSS_기분이미지" src="./assets/images/surprised.png" alt="놀람" />'
+          : ""
+        }
+              ${el.기분 === "화남"
+          ? '<img class="CSS_기분이미지" src="./assets/images/anger.png" alt="화남" />'
+          : ""
+        }
+              ${el.기분 === "기타"
+          ? '<img class="CSS_기분이미지" src="./assets/images/idontknownothing.png" alt="기타" />'
+          : ""
+        }
             </div>
             <div class="CSS_일기정보">
               <div class="CSS_일기내용">
-                ${
-                  el.기분 === "행복"
-                    ? `<div class="CSS_기분 CSS_행복">행복해요</div>`
-                    : ""
-                }
-                ${
-                  el.기분 === "슬픔"
-                    ? `<div class="CSS_기분 CSS_슬픔">슬퍼요</div>`
-                    : ""
-                }
-                ${
-                  el.기분 === "놀람"
-                    ? `<div class="CSS_기분 CSS_놀람">놀랐어요</div>`
-                    : ""
-                }
-                ${
-                  el.기분 === "화남"
-                    ? `<div class="CSS_기분 CSS_화남">화나요</div>`
-                    : ""
-                }
-                ${
-                  el.기분 === "기타"
-                    ? `<div class="CSS_기분 CSS_기타">기타</div>`
-                    : ""
-                }
+                ${el.기분 === "행복"
+          ? `<div class="CSS_기분 CSS_행복">행복해요</div>`
+          : ""
+        }
+                ${el.기분 === "슬픔"
+          ? `<div class="CSS_기분 CSS_슬픔">슬퍼요</div>`
+          : ""
+        }
+                ${el.기분 === "놀람"
+          ? `<div class="CSS_기분 CSS_놀람">놀랐어요</div>`
+          : ""
+        }
+                ${el.기분 === "화남"
+          ? `<div class="CSS_기분 CSS_화남">화나요</div>`
+          : ""
+        }
+                ${el.기분 === "기타"
+          ? `<div class="CSS_기분 CSS_기타">기타</div>`
+          : ""
+        }
                 <div class="CSS_날짜">${el.작성일}</div>
               </div>
               <div class="CSS_일기제목"> ${el.제목}</div>
@@ -259,9 +239,7 @@ const JS_필터링기능 = (event) => {
 };
 
 function JS_스크롤위로기능() {
-  window.scrollTo({
-    top: 0,
-  });
+  window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
 function JS_일기삭제기능(event, 일기번호) {

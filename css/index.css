@@ -90,7 +90,8 @@ a {
 }
 
 .CSS_색상반전 {
-  filter: invert(1); /* 색상 반전 */
+  filter: invert(1);
+  /* 색상 반전 */
 }
 
 /* 일기 보여주는 곳 */
@@ -188,6 +189,7 @@ a {
   font-weight: 700;
   line-height: 24px;
   overflow: hidden;
+  color: #000;
 }
 
 .CSS_삭제버튼 {
